@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package mi_paquete;
+
+service MiServicio {
+  rpc Saludar (SaludoRequest) returns (SaludoResponse);
+}
+
+message SaludoRequest {
+  string nombre = 1;
+}
+
+message SaludoResponse {
+  string saludo = 1;
+}
